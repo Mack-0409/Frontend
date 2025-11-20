@@ -36,6 +36,20 @@ nav:hover #nav-bottom {
     height: 100%;
     bottom: -100%;
 }
+
+#letstalk {
+    background-color: #0BA34E;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.76vw;
+    font-weight: 400;
+    padding: 9px 9px 9px 9px;
+    border: none;
+    border-radius: 40px;
+}
+#letstalk span {
+    padding-left: 17px;
+}
+
 #nav-bottom {
     position: absolute;
     width: 79%;
