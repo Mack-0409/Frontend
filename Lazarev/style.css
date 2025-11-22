@@ -14,7 +14,8 @@ body {
 nav {
     position: fixed;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    height: 14vh;
     width: 100%;
     padding: 1vw 10.4vw;
     justify-content: space-between;
@@ -27,21 +28,35 @@ nav h1 {
 .nav-part2 {
     display: flex;
     gap: 1vw;
+    align-items: flex-start;
+    padding: 1vh 0;
+    position: relative;
+    z-index: 10;
 }
 .nav-part2 h4 {
     font-size: 0.76vw;
     font-weight: 400;
+    margin-bottom: 2.6vw;
+}
+.nav-part2 h5 span {
+    font-size: 0.76vw;
+    font-weight: 500;
+    display: inline-block;    
+}
+.nav-part2 h5 {
+    margin-bottom: 0.8vw;
+    display: none;
+    overflow: hidden;
 }
 nav:hover #nav-bottom {
-    height: 100%;
-    bottom: -100%;
+    background-color: #111;
 }
 
 #letstalk {
     background-color: #0BA34E;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.76vw;
-    font-weight: 400;
+    font-weight: 700;
     padding: 9px 9px 9px 9px;
     border: none;
     border-radius: 40px;
@@ -51,12 +66,30 @@ nav:hover #nav-bottom {
 }
 
 #nav-bottom {
-    position: absolute;
-    width: 79%;
-    bottom: 0;
-    transition: all ease 0.5s;
-    border-bottom: 1px solid #dadada;
+   width: 79%;
+   position: absolute;
+   bottom: 0;
+   background-color: #111;
+   top: 100%;
+   z-index: 9;
+   border-bottom: 1px solid #fff;
 }
+.bottom-div {
+    font-size: small;
+    margin-left: 4px;
+    margin-top: 2vw;
+}
+.bottom-div h5 {
+    overflow: hidden;
+    margin-bottom: 0.2vw;
+}
+.bottom-div h5 span {
+    font-weight: 500;
+    display: inline-block;
+    font-size: 0.75;
+    opacity: 0;
+}
+
 
 #page1 {
     height: 100vh;
