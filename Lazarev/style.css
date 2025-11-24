@@ -21,6 +21,7 @@ nav {
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
+    z-index: 10;
 }
 nav h1 {
     font-size: 20px;
@@ -134,6 +135,21 @@ nav:hover #nav-bottom {
 }
 #page1-topic h4:nth-last-child(2) {
     border: none;
+}
+#moving-div {
+    background-color: white;
+    margin-top: 10vh;
+    position: absolute;
+    bottom: 3%;
+}
+#moving-div move {
+    display: flex;
+    align-items: center;    
+}
+.move img {
+    width: 80px;
+    margin: 4px;
+    margin-top: 8px;
 }
 
 #page2 {
